@@ -15,11 +15,19 @@
     window.$docsify = {
         // 网站配置
         name: '我的技术指南',
-        repo: 'https://github.com/你的GitHub用户名/你的仓库名', // 你的项目仓库地址
+        // 【注意】：请将 '你的GitHub用户名' 替换成你的实际用户名
+        repo: 'https://github.com/你的GitHub用户名/sure-blog',
+
+        // ===============================================
+        // *** 关键修改：添加 basePath，解决 GitHub Pages 子目录加载问题 ***
+        basePath: '/sure-blog/',
+        // ===============================================
+
         loadSidebar: true,           // 启用加载侧边栏（_sidebar.md）
         loadNavbar: true,            // 启用加载导航栏（_navbar.md）
         alias: {
-            '/.*/_sidebar.md': '/_sidebar.md' // 确保所有路径都能正确加载侧边栏
+            // 确保所有路径都能正确加载侧边栏
+            '/.*/_sidebar.md': '/_sidebar.md'
         },
         maxLevel: 4,                 // 默认显示目录的层级
         subMaxLevel: 2,              // 侧边栏的最大显示层级
