@@ -6,3 +6,5 @@ Java 虚拟机，负责执行字节码文件。
 Java 运行时环境，包括 JVM 和核心类库。
 ### JDK (Java Development Kit)
 Java 开发工具包，包括 JRE 和开发工具（如 javac 编译器）。
+
+测能不能正常运行
